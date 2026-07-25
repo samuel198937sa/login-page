@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Codexa — Entrar ou Criar Conta</title>
+	<meta name="description" content="Acesse sua conta Codexa ou crie uma nova em segundos.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+
+	<link rel="icon" href="images/apple-touch-icon.png" sizes="any">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/background.jpg">
+	<link rel="apple-touch-icon" href="images/favicon-32x32.png">
+</head>
+
+<body>
+
+	<header class="header">
+		<a href="index.html" class="logo"><i class='bx bxl-firebase'></i>Codexa</a>
+
+		<nav class="navbar">
+			<a href="index.html" aria-current="page">Início</a>
+			<a href="sobre.html">Sobre</a>
+			<a href="servicos.html">Serviços</a>
+			<a href="contato.html">Contato</a>
+		</nav>
+
+		<form action="#" class="search-bar">
+			<input type="text" placeholder="Pesquisar..." aria-label="Pesquisar">
+			<button type="submit" aria-label="Buscar"><i class="bx bx-search"></i></button>
+		</form>
+
+		<button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+			<i class='bx bx-menu'></i>
+		</button>
+	</header>
+
+	<div class="mobile-nav" id="mobileNav">
+		<a href="index.html" aria-current="page">Início</a>
+		<a href="sobre.html">Sobre</a>
+		<a href="servicos.html">Serviços</a>
+		<a href="contato.html">Contato</a>
+		<form action="#" class="search-bar search-bar-mobile">
+			<input type="text" placeholder="Pesquisar..." aria-label="Pesquisar">
+			<button type="submit" aria-label="Buscar"><i class="bx bx-search"></i></button>
+		</form>
+	</div>
+
+	<div class="background"></div>
+
+	<main class="container">
+		<div class="content">
+			<h2 class="logo"><i class='bx bxl-firebase'></i>Codexa</h2>
+
+			<div class="text-sci">
+				<h1>Bem-vindo(a)!<br><span>À nossa nova plataforma</span></h1>
+				<p>Crie sua conta em menos de um minuto e tenha acesso completo aos nossos recursos, onde estiver.</p>
+
+				<div class="social-icons">
+					<a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+					<a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+					<a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+					<a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="logreg-box" id="logregBox">
+			<div class="form-box login">
+				<form action="#" novalidate>
+					<h2>Entrar</h2>
+
+					<div class="input-box">
+						<span class="icon"><i class='bx bxs-envelope'></i></span>
+						<input type="email" id="loginEmail" placeholder=" " required>
+						<label for="loginEmail">E-mail</label>
+						<span class="error-msg">Informe um e-mail válido.</span>
+					</div>
+
+					<div class="input-box">
+						<span class="icon toggle-password"><i class='bx bxs-lock-alt'></i></span>
+						<input type="password" id="loginPassword" placeholder=" " required minlength="6">
+						<label for="loginPassword">Senha</label>
+						<span class="error-msg">A senha deve ter no mínimo 6 caracteres.</span>
+					</div>
+
+					<div class="remember-forgot">
+						<label><input type="checkbox"> Lembrar de mim</label>
+						<a href="#">Esqueceu a senha?</a>
+					</div>
+
+					<button type="submit" class="btn">Entrar</button>
+
+					<div class="login-register">
+						<p>Ainda não tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
+					</div>
+				</form>
+			</div>
+
+			<div class="form-box register">
+				<form action="#" novalidate>
+					<h2>Criar conta</h2>
+
+					<div class="input-box">
+						<span class="icon"><i class='bx bxs-user'></i></span>
+						<input type="text" id="registerName" placeholder=" " required>
+						<label for="registerName">Nome</label>
+						<span class="error-msg">Informe seu nome.</span>
+					</div>
+
+					<div class="input-box">
+						<span class="icon"><i class='bx bxs-envelope'></i></span>
+						<input type="email" id="registerEmail" placeholder=" " required>
+						<label for="registerEmail">E-mail</label>
+						<span class="error-msg">Informe um e-mail válido.</span>
+					</div>
+
+					<div class="input-box">
+						<span class="icon toggle-password"><i class='bx bxs-lock-alt'></i></span>
+						<input type="password" id="registerPassword" placeholder=" " required minlength="6">
+						<label for="registerPassword">Senha</label>
+						<span class="error-msg">A senha deve ter no mínimo 6 caracteres.</span>
+					</div>
+
+					<div class="remember-forgot">
+						<label><input type="checkbox" required> Concordo com os termos e condições</label>
+					</div>
+
+					<button type="submit" class="btn">Cadastrar</button>
+
+					<div class="login-register">
+						<p>Já tem uma conta? <a href="#" class="login-link">Entrar</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<a href="index.html" class="logo"><i class='bx bxl-firebase'></i>Codexa</a>
+			<nav class="footer-links">
+				<a href="index.html">Início</a>
+				<a href="sobre.html">Sobre</a>
+				<a href="servicos.html">Serviços</a>
+				<a href="contato.html">Contato</a>
+			</nav>
+			<div class="footer-socials">
+				<a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+				<a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+				<a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+				<a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+			</div>
+		</div>
+		<p class="footer-copy">© 2026 Codexa. Todos os direitos reservados.</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
